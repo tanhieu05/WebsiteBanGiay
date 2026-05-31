@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HIEUSTORE - GIÀY NAM CHÍNH HÃNG</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header>
+    <div class="logo">HIEU STORE</div>
+    <div id="navbar">
+        <a href="index.html">Trang chủ</a>
+        <a href="giaynam.html">Giày nam</a>
+        <a href="giohang.html">Giỏ hàng</a>
+        <a href="blog.html">Blog</a>
+        <a href="lienhe.html">Liên hệ</a>
+        <a href="labthuchanh.html">Lab thực hành</a>
+    </div>
+        <button id="menu-toggle">☰</button>
+    </header>
+    <main>
+        <div class="banner-search-container">
+            <div class="container-flex">
+                <div class="hero-content">
+                    <h1>Phong Cách Của Bạn Như Nào</h1>
+                    <p><strong>Khám phá bộ sưu tập giày thể thao nam nữ mới nhất tại Hieu Store</strong></p>
+                </div>
+                <div class="header-tools">
+                    <div class="search-mini">
+                        <input type="text" id="searchInput" placeholder="Tìm giày...">
+                        <button type="button" onclick="searchProduct()">Tìm kiếm</button>
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="collection-container">
+            <h2 class="collection-title">BỘ SƯU TẬP GIÀY NAM</h2>
+            <p class="collection-subtitle">Khám phá bộ sưu tập giày thể thao nam mới nhất tại Hieu Store</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/giay1.webp">
+                    <h3 class="product-name">Giày đen Bayeks</h3>
+                    <p class="product-price">1.200.000 VNĐ</p>
+                    <button class="btn-buy" onclick="addToCart('Giày đen Bayeks', 1200000, 'https://tse4.mm.bing.net/th/id/OIP.0cBoif1fF7Y2nUBZrabHpQHaHa?cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3')">Thêm vào giỏ</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/giay2.webp">
+                    <h3 class="product-name">Giày đen Polytino</h3>
+                    <p class="product-price">1.800.000 VNĐ</p>
+                    <button class="btn-buy" onclick="addToCart('Giày đen Polytino', 1800000, 'https://polytino.com/wp-content/uploads/2024/08/DERBY-2026-POLYTINO-2-2048x2048.jpg')">Thêm vào giỏ</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/giay3.jpg" >
+                    <h3 class="product-name">Giày Nâu Agiay</h3>
+                    <p class="product-price">1.500.000 VNĐ</p>
+                    <button class="btn-buy" onclick="addToCart('Giày Nâu Agiay', 1500000, 'hhttps://agiay.vn/wp-content/uploads/2022/06/Giay-nam-cong-so-buoc-day-BN0127.jpg')">Thêm vào giỏ</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/giay4.webp" >
+                    <h3 class="product-name">Giàu Nâu Nhạt </h3>
+                    <p class="product-price">1.00.000 VNĐ</p>
+                    <button class="btn-buy" onclick="addToCart('Giàu Nâu Nhạt', 100000, 'https://cf.shopee.vn/file/9306f2c0cd64ae2fd7799077e755a192')">Thêm vào giỏ</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/giay5.jpg" >
+                    <h3 class="product-name">Giày thể thao cá tính</h3>
+                    <p class="product-price">1.200.000 VNĐ</p>
+                    <button class="btn-buy" onclick="addToCart('Giày thể thao cá tính', 1200000, 'https://salt.tikicdn.com/cache/w1200/ts/product/7a/4e/04/b692c9562c49ccb7d224f427a53bf935.jpg')">Thêm vào giỏ</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/giay6.jpg">
+                    <h3 class="product-name">Giày trẻ trung thời trang</h3>
+                    <p class="product-price">950.000 VNĐ</p>
+                    <button class="btn-buy" onclick="addToCart('Giày trẻ trung thời trang', 950000, 'https://i.pinimg.com/originals/ea/2a/9d/ea2a9d31b16a548a5dd8bb5635dbfa28.jpg')">Thêm vào giỏ</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/giay7.jpg">
+                    <h3 class="product-name">Giày xám thoáng mát </h3>
+                    <p class="product-price">1.300.000 VNĐ</p>
+                    <button class="btn-buy" onclick="addToCart('Giày xám thoáng mát', 1300000, 'https://i.pinimg.com/736x/d0/8b/53/d08b531f6a51b5787e0c040f2c2da0c0.jpg')">Thêm vào giỏ</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/giay9.jpg">
+                    <h3 class="product-name">Giày thể thao American</h3>
+                    <p class="product-price">2.800.000 VNĐ</p>
+                    <button class="btn-buy" onclick="addToCart('Giày thể thao American', 2800000, 'https://i.pinimg.com/236x/b5/d1/cd/b5d1cdaac642b5b2b91b9fb38dcb3786.jpg')">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </section>
+        <div class="newsletter-bar">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Đăng Ký Nhận Bản Tin</h3>
+                    <p>Để nhận thông tin mới nhất từ Hieu Store</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Nhập địa chỉ email của bạn">
+                    <button type="button">Đăng Ký</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="logo-box">
+                    <h1 style="margin: 0; font-size: 24px;">HIEUSTORE</h1>
+                </div>
+                <p>Hieu Store - Đồ án website bán giày.</p>
+            </div>
+            <div class="footer-column">
+                <h3>THÔNG TIN</h3>
+                <p>Email: tanhieupham05@gmail.com</p>
+                <p>Điện thoại: 0352261173</p>
+                <p>Địa chỉ: 41 Đường Số 15 KDC Him Lam, BÌnh Hưng TPHCM</p>
+                <p class="copyright">©COPYRIGHT © 2026 Hieu STORE, ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="footer-column">
+               
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
